@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.otf") format("opentype");
+  font-weight: normal;
+}
+body {
+  background: radial-gradient(circle, #00adba 0%, #084c61 100%) !important;
+  background-attachment: fixed;
+  font-family: "Gotham", sans-serif;
+  color: white;
+}
+
+.nav {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}/*# sourceMappingURL=main.css.map */

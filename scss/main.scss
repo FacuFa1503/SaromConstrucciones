@@ -14,7 +14,7 @@
 body {
     background: radial-gradient(circle, #00adba 0%, #084c61 100%) !important;
     background-attachment: fixed;
-    font-family: 'Gotham', sans-serif; // Asegurate de cargar la font antes
+    font-family: 'Gotham', sans-serif;
     color: white;
 }
 
@@ -27,10 +27,10 @@ body {
    background: radial-gradient(circle, #00d2e0 0%, #094c61 100%) !important;
    min-height: 45vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    position: relative;
 
     picture {
         width: 100%;
@@ -40,16 +40,17 @@ body {
 
     .hero-logo {
         width: 100%;
-        height: 45vh;
-        object-fit: cover;
-        object-position: center;
+        max-width: 500px;
+        height: auto;
+        object-fit: contain;
         display: block;
+        margin: 0 auto;
     }
 
     @media (min-width: 992px) {
-        min-height: 65vh;
+        min-height: 60vh;
         .hero-logo {
-            height: 65vh;
+            max-width: 800px;
         }
     }
 }

@@ -24,10 +24,10 @@ body {
   background: radial-gradient(circle, #00d2e0 0%, #094c61 100%) !important;
   min-height: 45vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 .hero-header picture {
   width: 100%;
@@ -36,18 +36,18 @@ body {
 }
 .hero-header .hero-logo {
   width: 100%;
-  height: 45vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  max-width: 500px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
   .hero-header {
-    min-height: 65vh;
+    min-height: 60vh;
   }
   .hero-header .hero-logo {
-    height: 65vh;
+    max-width: 800px;
   }
 }/*# sourceMappingURL=main.css.map */

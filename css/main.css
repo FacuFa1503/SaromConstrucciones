@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/Gotham-Bold.otf") format("opentype");
+  src: url("fonts/Gotham-Bold.otf") format("opentype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/Gotham-Book.otf") format("opentype");
+  src: url("fonts/Gotham-Book.otf") format("opentype");
   font-weight: normal;
 }
 body {
@@ -18,4 +18,36 @@ body {
 .nav {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
+}
+
+.hero-header {
+  background: radial-gradient(circle, #00d2e0 0%, #094c61 100%) !important;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.hero-header picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero-header .hero-logo {
+  width: 100%;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+@media (min-width: 992px) {
+  .hero-header {
+    min-height: 65vh;
+  }
+  .hero-header .hero-logo {
+    height: 65vh;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@
     
     <meta property="og:title" content="Sarom Constructions | Building Excellence">
     <meta property="og:description" content="Sarom Constructions is a leading construction company dedicated to delivering high-quality building solutions. With a commitment to excellence, we specialize in residential, commercial, and industrial construction projects. Our team of experienced professionals ensures that every project is completed on time and within budget, while maintaining the highest standards of craftsmanship. Whether you're looking to build your dream home or undertake a large-scale commercial project, Sarom Constructions is your trusted partner for all your construction needs. Contact us today to learn more about our services and how we can help bring your vision to life.">
-    <meta property="og:image" content="img/logo-shadre.jpg"> <link rel="icon" type="image/x-icon" href="img/logo.ico">   
+    <meta property="og:image" content="img/logo-shadre.jpg"> <link rel="icon" type="image/x-icon" href="img/logo-vector.svg">   
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +21,11 @@
 </head>
 <body>
 
-    <header class="py-4">
-        <div class="container text-center">
-            <img src="img/logo-vector.svg" alt="Sarom Constructions Logo" style="width: 250px; height: auto;">
-
-        </div>
-        <div class="brand-container mt-3">
-            <h1 class="display-5 fw-bold">Sarom Constructions</h1>
-            <p class="text-muted small">Construyendo Excelencia</p>
-        </div>
+    <header class="hero-header">
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/banner-desktop.svg">
+            <img src="img/banner-mobile.svg" class="hero-logo" alt="Sarom Banner">
+        </picture>
     </header>
     
     <nav class="nav navbar-expand-md sticky-top shadow-sm">
@@ -37,7 +33,7 @@
             <button class="navbar-toggler boder-0" type="button" data-vs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div clas="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active ms-4" href="#index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link ms-4" href="pages/servicios.html">Servicios</a></li>
@@ -47,6 +43,7 @@
                 </ul>
             </div>
         </div>
+    </nav>
 
     <main>
         <section class="container my-5">

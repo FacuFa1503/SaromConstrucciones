@@ -97,3 +97,128 @@ body {
         border-radius: 8px !important;
     }
 }
+
+//Service page
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .service-icon {
+        font-size: 3rem;
+    }
+
+    h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+//Projects page
+.project-item {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    .project-img-container {
+        position: relative;
+        transition: all 0.5s ease;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(8, 76, 97, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        padding: 20px;
+
+        .overlay-text {
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+            
+            h4 {
+                color: #00d2e0;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 0.9rem;
+                color: white;
+            }
+        }
+    }
+
+    &:hover {
+        .project-overlay {
+            opacity: 1;
+            .overlay-text {
+                transform: translateY(0);
+            }
+        }
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+//About us page
+.about-image-container {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #00d2e0;
+        border-radius: 16px;
+        z-index: -1;
+    }
+}
+
+.pilar-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    h3 {
+        color: #00d2e0;
+    }
+
+    &:hover {
+        border-color: #00d2e0;
+        background: rgba(0, 210, 224, 0.05);
+    }
+}
